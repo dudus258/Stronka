@@ -105,7 +105,7 @@ html, body{
   color: #d5d5d5;
 }
 footer{
-  background-color: #6699ff;
+  background-color: #99ccff;
   color: #ffffff;
   padding-top: 2rem;
 }
@@ -227,6 +227,7 @@ figure {
 }
 h1, h2, h3, h4, .navbar{
   font-family: Diogenes, sans-serif;
+  color: #6699ff;
 }
 #myBtn {
   display: none; /* Hidden by default */
@@ -295,6 +296,12 @@ h1, h2, h3, h4, .navbar{
 }
 img{
   border-radius: 5px;
+}
+.gr{
+  color: #6699ff;
+}
+.navbar-light, .navbar-nav, .nav-link{
+  color: #6699ff;
 }
 
 /*
