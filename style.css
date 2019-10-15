@@ -252,8 +252,12 @@ h1, h2, h3, h4, .navbar{
   width: 100%;
   margin:5px;
 }
-
-
+.logo{
+  width: 
+}
+.aul{
+  text-align: left;
+}
 
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
