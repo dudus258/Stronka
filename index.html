@@ -10,7 +10,7 @@
   <body>
   	<nav  class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="navbar">
 		<div class="container-fluid">
-			<a class="navbar-brand logo" href="#"><img src="img/logo.png"></a>
+			<a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -29,9 +29,6 @@
 						<a class="nav-link" href="#tree">Geneologic tree</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#regions">Regions</a>
-					</li>
-					<li class="nav-item">
 						<a class="nav-link" href="#OG">Olympic games</a>
 					</li>
 				</ul>
@@ -39,26 +36,23 @@
 		</div>
 	</nav>
 	
-	<script type="text/javascript">//Get the button:
-mybutton = document.getElementById("myBtn");
-console.log(abc);
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+	<script type="text/javascript">
+		var btn = $('#button');
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 30) {
+    btn.addClass('show');
   } else {
-    mybutton.style.display = "none";
+    btn.removeClass('show');
   }
-}
+});
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}</script>
-<span onclick="topFunction()" id="myBtn" title="Go to top">Top</span>
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+	</script>
+<a id="button"></a>
 
 	<div id="slides" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
@@ -325,156 +319,6 @@ Poseidon was protector of seafarers.
   	</div>
   </div>
 
-<button class="btn btn-outline-secondary tree" data-toggle="collapse" data-target="#regions">
-	Lesser gods
-</button>
-  <div id="regions" class="collapse">
-  	<div class="container-fluid padding">
-  		<div class="row text-center">
-  			<div class="col-md-3">
-			<div class="card">
-					<!--obrazek boga-->
-				<img src="img/team2.png" class="card-img-top">
-				<div class="card-body">
-					<h4 class="card-title">
-						Hades
-					</h4>
-					<p class="card-text">
-						In the ancient Greek religion and myth, is the god of the dead and the king of the underworld.Hades was the eldest son of Cronus and Rhea. He and his brothers, Zeus and Poseidon, defeated their father's generation of gods, the Titans, and claimed rulership over the cosmos. Hades received the underworld.Hades was often portrayed with his three-headed guard dog Cerberus.	
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-					<!--obrazek boga-->
-				<img src="img/team2.png" class="card-img-top">
-				<div class="card-body">
-					<h4 class="card-title">
-						Hades
-					</h4>
-					<p class="card-text">
-						In the ancient Greek religion and myth, is the god of the dead and the king of the underworld.Hades was the eldest son of Cronus and Rhea. He and his brothers, Zeus and Poseidon, defeated their father's generation of gods, the Titans, and claimed rulership over the cosmos. Hades received the underworld.Hades was often portrayed with his three-headed guard dog Cerberus.	
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-					<!--obrazek boga-->
-				<img src="img/team2.png" class="card-img-top">
-				<div class="card-body">
-					<h4 class="card-title">
-						Hades
-					</h4>
-					<p class="card-text">
-						In the ancient Greek religion and myth, is the god of the dead and the king of the underworld.Hades was the eldest son of Cronus and Rhea. He and his brothers, Zeus and Poseidon, defeated their father's generation of gods, the Titans, and claimed rulership over the cosmos. Hades received the underworld.Hades was often portrayed with his three-headed guard dog Cerberus.	
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-					<!--obrazek boga-->
-				<img src="img/team2.png" class="card-img-top">
-				<div class="card-body">
-					<h4 class="card-title">
-						Hades
-					</h4>
-					<p class="card-text">
-						In the ancient Greek religion and myth, is the god of the dead and the king of the underworld.Hades was the eldest son of Cronus and Rhea. He and his brothers, Zeus and Poseidon, defeated their father's generation of gods, the Titans, and claimed rulership over the cosmos. Hades received the underworld.Hades was often portrayed with his three-headed guard dog Cerberus.	
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-					<!--obrazek boga-->
-				<img src="img/team2.png" class="card-img-top">
-				<div class="card-body">
-					<h4 class="card-title">
-						Hades
-					</h4>
-					<p class="card-text">
-						In the ancient Greek religion and myth, is the god of the dead and the king of the underworld.Hades was the eldest son of Cronus and Rhea. He and his brothers, Zeus and Poseidon, defeated their father's generation of gods, the Titans, and claimed rulership over the cosmos. Hades received the underworld.Hades was often portrayed with his three-headed guard dog Cerberus.	
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-					<!--obrazek boga-->
-				<img src="img/team2.png" class="card-img-top">
-				<div class="card-body">
-					<h4 class="card-title">
-						Hades
-					</h4>
-					<p class="card-text">
-						In the ancient Greek religion and myth, is the god of the dead and the king of the underworld.Hades was the eldest son of Cronus and Rhea. He and his brothers, Zeus and Poseidon, defeated their father's generation of gods, the Titans, and claimed rulership over the cosmos. Hades received the underworld.Hades was often portrayed with his three-headed guard dog Cerberus.	
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-					<!--obrazek boga-->
-				<img src="img/team2.png" class="card-img-top">
-				<div class="card-body">
-					<h4 class="card-title">
-						Hades
-					</h4>
-					<p class="card-text">
-						In the ancient Greek religion and myth, is the god of the dead and the king of the underworld.Hades was the eldest son of Cronus and Rhea. He and his brothers, Zeus and Poseidon, defeated their father's generation of gods, the Titans, and claimed rulership over the cosmos. Hades received the underworld.Hades was often portrayed with his three-headed guard dog Cerberus.	
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-					<!--obrazek boga-->
-				<img src="img/team2.png" class="card-img-top">
-				<div class="card-body">
-					<h4 class="card-title">
-						Hades
-					</h4>
-					<p class="card-text">
-						In the ancient Greek religion and myth, is the god of the dead and the king of the underworld.Hades was the eldest son of Cronus and Rhea. He and his brothers, Zeus and Poseidon, defeated their father's generation of gods, the Titans, and claimed rulership over the cosmos. Hades received the underworld.Hades was often portrayed with his three-headed guard dog Cerberus.	
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-					<!--obrazek boga-->
-				<img src="img/team2.png" class="card-img-top">
-				<div class="card-body">
-					<h4 class="card-title">
-						Hades
-					</h4>
-					<p class="card-text">
-						In the ancient Greek religion and myth, is the god of the dead and the king of the underworld.Hades was the eldest son of Cronus and Rhea. He and his brothers, Zeus and Poseidon, defeated their father's generation of gods, the Titans, and claimed rulership over the cosmos. Hades received the underworld.Hades was often portrayed with his three-headed guard dog Cerberus.	
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-					<!--obrazek boga-->
-				<img src="img/team2.png" class="card-img-top">
-				<div class="card-body">
-					<h4 class="card-title">
-						Hades
-					</h4>
-					<p class="card-text">
-						In the ancient Greek religion and myth, is the god of the dead and the king of the underworld.Hades was the eldest son of Cronus and Rhea. He and his brothers, Zeus and Poseidon, defeated their father's generation of gods, the Titans, and claimed rulership over the cosmos. Hades received the underworld.Hades was often portrayed with his three-headed guard dog Cerberus.	
-					</p>
-				</div>
-			</div>
-		</div>
-  		</div>
-  	</div>
-  </div>
-
 <!--informacje igzyska-->
 <div class="container-fluid padding">
 	<div class="row padding" id="OG">
@@ -529,27 +373,27 @@ Poseidon was protector of seafarers.
 		<div class="row text-center">
 			<div class="col-6">
 				<!--logo erasmusa-->
-<<<<<<< HEAD
-				<img src="img/.png">
-=======
+
+				
+
 				<img class="erasmus" src="img/erasmus.png">
->>>>>>> a86b7da97c9b60f9ba3a5c1f822febca3747cd74
+
 				<hr class="light">
 				<!--dane erasmusa(email, strona itp)-->
-				<p><a href="https://erasmusplus.org.pl/">Erasmus+</a></p>
+				<p><a href="https://erasmusplus.org.pl/" style="text-decoration: none;">Erasmus+</a></p>
 				<p>Phone number: +48 22 463 10 00</p>
-				<p><a href="mailto:kontakt@frse.org.pl">E-mail</a></p>
-				<p><a href="https://europa.eu/european-union/index_pl">
+				<p><a href="mailto:kontakt@frse.org.pl" style="text-decoration: none;">E-mail: kontakt@frse.org.pl </a></p>
+				<p><a href="https://europa.eu/european-union/index_pl" style="text-decoration: none;">
 European Union</a>
 			</div>
 			<div class="col-6">
 				<hr class="light">
 				<h3>Authors</h3>
 				<hr class="light">
-						<p><span class="aul">Programmer:</span>Jakub Dudek</p>
-						<p><span class="aul">Content manager:</span>Przemysław Chlebowski</p>
-						<p><span class="aul">Scrum master:</span>Konrad Kubiak</p>
-						<p><span class="aul">Graphic designers:</span>Ernest Dratkiewicz<br> Patryk Plewka</p>
+						<p><span class="aul">Programmer: </span>Jakub Dudek</p>
+						<p><span class="aul">Content manager: </span>Przemysław Chlebowski</p>
+						<p><span class="aul">Scrum master: </span>Konrad Kubiak</p>
+						<p><span class="aul">Graphic designers: </span>Ernest Dratkiewicz, Patryk Plewka</p>
 			</div>
 			<div class="col-12">
 				<hr class="light-100">
