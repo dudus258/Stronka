@@ -303,7 +303,9 @@ img{
 .navbar-light, .navbar-nav, .nav-link{
   color: #6699ff;
 }
-
+footer>a{
+  text-decoration: none;
+}
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
