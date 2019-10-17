@@ -306,6 +306,10 @@ footer>a{
 .oi>p{
   font-size: 120%;
 }
+.ft{
+  box-sizing: border-box;
+  width: 95vw;
+}
 
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
